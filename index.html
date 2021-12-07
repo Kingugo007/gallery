@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature Gallery</title>
+<style>
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+.main {
+  width: 80%;
+  margin: auto;
+}
+
+.main h1{
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+}
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, 500px);
+  gap: 20px;
+  
+}
+
+.grid-section img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+</style>
+
+
+</head>
+<body>
+
+  <main class="main">
+  <h1>Gallery</h1>
+  <section class="grid-section">
+  <div>
+  <img src="./images/elephant.jpg" alt="elephant"/>
+  </div>
+  <div>
+    <img src="./images/flamingo.jpg" alt="flamingo" />
+  </div>
+  <div>
+    <img src="./images/fox.jpg" alt="fox" />
+  </div>
+  <div>
+    <img src="./images/giraffe.jpg" alt="giraffe" />
+  </div>
+  <div>
+    <img src="./images/lion.jpg" alt="lion" />
+  </div>
+  <div>
+    <img src="./images/rabbit.jpg" alt="rabbit" />
+  </div>
+
+
+
+</section>
+</main>
+
+</body>
+</html>
